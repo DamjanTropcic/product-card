@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-preview-card</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-problack: #1C232B;
+        --color-progray: #6C7289;
+        --color-procream: #F2EAE2;
+        --color-prowhite: #FFFFFF;
+        --color-progreen500: #3D8168;
+        --color-progreen700: #1A4032;
+      }
+    </style>
+</head>
+<body class="bg-procream justify-center items-center flex flex-col min-h-screen">
+
+    <div class="flex flex-col w-[350px] h-auto lg:flex-row lg:w-[600px] lg:h-[456px] rounded-[8px] overflow-hidden">
+    
+        <div class="lg:flex-1">
+            <img src="images/image-product-desktop.jpg" class="w-full h-full object-cover" alt="product image">
+        </div>
+        <div class="bg-prowhite p-[32px] lg:flex-1">
+            <div class="tracking-[0.5rem] text-xs mb-[24px]">PERFUME</div>
+            <div class="mb-[24px] text-[30px]">Gabrielle Essence Eau De Parfum</div>
+
+            <p class="mb-[32px]">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="flex items-center mb-[24px]">
+                <span class="mr-[16px] text-progreen500 text-3xl">$149.99</span>
+                <span class="line-through">$169.99</span>
+            </div>
+
+            <button class="bg-progreen500 text-prowhite py-2 px-4 rounded hover:bg-progreen700 w-full">
+                <img src="images/icon-cart.svg" alt="cart icon" class="inline-block mr-2">
+                Add to cart
+            </button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
